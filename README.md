@@ -7,3 +7,5 @@ The original repository for WILLOW can be found [here](https://github.com/antoin
 
 dataset with frame-level feature can be found here https://drive.google.com/drive/folders/1RtwHnztpWYrO32sXMNDFJita8k5Fy545
 
+data.npy is of the format (videoId, vid feature, aud feature, label)
+
