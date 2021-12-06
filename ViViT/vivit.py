@@ -63,6 +63,7 @@ class ViViT(pl.LightningModule):
 
         cls_space_tokens = repeat(self.space_token, '() n d -> b t n d', b = b, t=t)
         x = torch.cat((cls_space_tokens, x), dim=2)
+        # Here, the 3rd dimension of x has increased by 1 since we are adding a positional embedding token
         x += self.pos_embedding[:, :, :(n + 1)]
         x = self.dropout(x)
 
@@ -79,11 +80,15 @@ class ViViT(pl.LightningModule):
         x = x.mean(dim = 1) if self.pool == 'mean' else x[:, 0]
 
         return self.mlp_head(x)
+    
+    def classification_loss(self, preds, target):
+        criterion = torch.nn.CrossEntropyLoss()
+        return criterion(preds, target)
 
     def training_step(self, batch, batch_idx):
         x, y = batch
         y_predicted = self(x) 
-        loss = classification_loss(y_predicted, y)
+        loss = self.classification_loss(y_predicted, y)
         train_losses.append(loss)
         self.log("train_loss", loss, on_step=False, on_epoch=True, prog_bar=True, logger=True)
         return loss
