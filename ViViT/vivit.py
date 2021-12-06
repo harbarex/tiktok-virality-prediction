@@ -7,6 +7,9 @@ import pytorch_lightning as pl
 from module import Attention, PreNorm, FeedForward
 import numpy as np
 
+train_losses = []
+val_losses = []
+
 class Transformer(pl.LightningModule):
     def __init__(self, dim, depth, heads, dim_head, mlp_dim, dropout = 0.):
         super().__init__()
