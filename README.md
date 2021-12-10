@@ -36,14 +36,15 @@ pip install einops pytorch_lightning sk-video moviepy
 
 
 ---
-
+#### Model Training & Testing
+```
+cd ViViT
+```
 To train the model: 
 
 ```
 python train.py
 ```
-
----
 
 To test the model: 
 
