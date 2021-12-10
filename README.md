@@ -68,18 +68,23 @@ You can download the pre-trained models [here](https://drive.google.com/drive/fo
 │   ├── dir2
 ```
 
-### Reproducibility 
-
-Tests that ensure the results of all functions and training loop match the official implentation are contained in a different branch `reproduce`. One can check it out and run the tests:
-```
-git checkout reproduce
-py.test
-```
-
 ## Method
 
-[Learning To Count Everything](https://github.com/cvlab-stonybrook/LearningToCountEverything)
-  
+[ViViT: A Video Vision Transformer](https://arxiv.org/pdf/2103.15691.pdf)
+> Anurag Arnab, Mostafa Dehghani, Georg Heigold, Chen Sun, Mario Lučić, Cordelia Schmid
 
-> Basic concept explanation with image
+## Citation:
+```
+@misc{arnab2021vivit,
+      title={ViViT: A Video Vision Transformer}, 
+      author={Anurag Arnab and Mostafa Dehghani and Georg Heigold and Chen Sun and Mario Lučić and Cordelia Schmid},
+      year={2021},
+      eprint={2103.15691},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
+## Acknowledgement:
+* Base ViViT code is ported to PyTorch Lightning from [@rishikksh20](https://github.com/rishikksh20) repo : [ViViT-pytorch](https://github.com/rishikksh20/ViViT-pytorch)
+* Audio feature extraction taken from Google MediaPipe
