@@ -17,8 +17,8 @@ data.npy is of the format (videoId, vid feature, aud feature, label)
 ## Installation
 
 ```
-git clone placeholder.git
-cd placeholder
+git clone https://github.com/MeteoRex11/tiktok-virality-prediction
+cd tiktok-virality-prediction
 pip install -r requirements.txt
 ```
 
