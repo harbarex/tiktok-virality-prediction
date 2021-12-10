@@ -2,17 +2,11 @@
 
 This project has been implemented by Group 31 as a requirement for the Final Project for the Fall 2021 iteration of the CIS-519 course at the University of Pennsylvania.
 
-The reference code for the toolbox LOUPE can be found [here](https://github.com/antoine77340/LOUPE).
-
-The original repository for WILLOW can be found [here](https://github.com/antoine77340/Youtube-8M-WILLOW).
-
 dataset with frame-level feature can be found here https://drive.google.com/drive/folders/1RtwHnztpWYrO32sXMNDFJita8k5Fy545
 
 Video Feature Vector Size for each frame in ViViT: (video_size/patch_size)^2
 
 or Embedding is: (batchSize, numFrames, (video_size/patch_size)^2, 192)
-
-data.npy is of the format (videoId, vid feature, aud feature, label)
 
 ## Installation
 
@@ -72,6 +66,8 @@ You can download the pre-trained models [here](https://drive.google.com/drive/fo
 
 [ViViT: A Video Vision Transformer](https://arxiv.org/pdf/2103.15691.pdf)
 > Anurag Arnab, Mostafa Dehghani, Georg Heigold, Chen Sun, Mario Lučić, Cordelia Schmid
+
+![](assets/model.PNG)
 
 ## Citation:
 ```
