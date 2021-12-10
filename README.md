@@ -67,7 +67,7 @@ You can download the pre-trained models [here](https://drive.google.com/drive/fo
 [ViViT: A Video Vision Transformer](https://arxiv.org/pdf/2103.15691.pdf)
 > Anurag Arnab, Mostafa Dehghani, Georg Heigold, Chen Sun, Mario Lučić, Cordelia Schmid
 
-![](assets/model.PNG)
+![](assets/model.png)
 
 ## Citation:
 ```
