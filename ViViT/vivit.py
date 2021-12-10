@@ -91,7 +91,6 @@ class ViViT(pl.LightningModule):
     def training_step(self, batch, batch_idx):
         x, y = batch
         y_predicted = self(x)
-        #print(torch.argmax(y_predicted, axis=1), end='\n')
         loss = self.classification_loss(y_predicted, y)
         train_losses.append(loss)
         self.log("train_loss", loss, on_step=False, on_epoch=True, prog_bar=True, logger=True)
@@ -107,9 +106,6 @@ class ViViT(pl.LightningModule):
     
     def configure_optimizers(self):
         optimizer = torch.optim.Adam(self.parameters(), lr=1e-4, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.0)
-        #optimizer = torch.optim.SGD(self.parameters(), lr=1e-5, momentum=0.9)
-        #scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, [30, 40], gamma=0.1)
-        
         return {'optimizer': optimizer, 'frequency': 50}
     
     
