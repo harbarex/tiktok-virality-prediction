@@ -26,12 +26,13 @@ pip install -r requirements.txt
   <summary> Dependencies (click to expand) </summary>
   
   ## Dependencies
-  - PyTorch 1.4
+  - pytorch
+  - pytorch_lightning
+  - einops
   - matplotlib
   - numpy
-  - imageio
-  - imageio-ffmpeg
-  - configargparse
+  - scikit-video
+  - moviepy
   
 </details>
 
