@@ -13,7 +13,7 @@ or Embedding is: (batchSize, numFrames, (video_size/patch_size)^2, 192)
 ```
 git clone https://github.com/MeteoRex11/tiktok-virality-prediction
 cd tiktok-virality-prediction
-pip install einops pytorch_lightning sk-video moviepy
+pip install einops pytorch pytorch_lightning numpy matplotlib sk-video moviepy
 ```
 
 <details>
