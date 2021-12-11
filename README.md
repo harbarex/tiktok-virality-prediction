@@ -64,6 +64,31 @@ python test.py
 
 ---
 
+## Basic Usage:
+```python
+img = torch.ones([1, 134, 3, 240, 240])
+
+image_size = 240
+patch_size = 16
+num_classes = 2
+num_frames = 134
+num_epochs = 30
+dim = 128
+
+model = ViViT(image_size, patch_size, num_classes, num_frames, dim)
+model = model.to(device)
+
+parameters = filter(lambda p: p.requires_grad, model.parameters())
+parameters = sum([np.prod(p.size()) for p in parameters]) / 1_000_000
+print('Trainable Parameters: %.3fM' % parameters)
+
+output = model(img)
+
+print("Shape of model output :", output.shape)      # [B, num_classes]
+```
+
+---
+
 ## Method
 
 [ViViT: A Video Vision Transformer](https://arxiv.org/pdf/2103.15691.pdf)
