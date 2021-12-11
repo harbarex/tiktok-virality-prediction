@@ -8,10 +8,6 @@ The original TikTok dataset with the top 1000 trending videos can be found [here
 
 The dataset with frame-level features can be found [here](https://drive.google.com/drive/folders/1RtwHnztpWYrO32sXMNDFJita8k5Fy545).
 
-Video Feature Vector Size for each frame in ViViT: (video_size/patch_size)^2
-
-or Embedding is: (batchSize, numFrames, (video_size/patch_size)^2, 192)
-
 ---
 
 ## Installation
