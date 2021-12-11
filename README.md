@@ -40,13 +40,13 @@ pip install einops pytorch pytorch_lightning numpy matplotlib sk-video moviepy
 
 ### Quick Start
 
-### Data Pre-Processing
+### 1. Data Pre-Processing
 ```
 ```
 
 ---
 
-### Model Training & Testing
+### 2. Model Training & Testing
 ```
 cd ViViT/
 ```
@@ -60,6 +60,11 @@ To test the model:
 
 ```
 python test.py
+```
+
+## 3. Training Log Visualization:
+```
+tensorboard --logdir lightning_logs
 ```
 
 ---
@@ -86,12 +91,6 @@ output = model(img)
 
 print("Shape of model output :", output.shape)      # [B, num_classes]
 ```
-
-## Training Log Visualization:
-```
-tensorboard --logdir lightning_logs
-```
-
 ---
 
 ## Method
