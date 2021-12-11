@@ -87,6 +87,11 @@ output = model(img)
 print("Shape of model output :", output.shape)      # [B, num_classes]
 ```
 
+## Training Log Visualization:
+```
+tensorboard --logdir lightning_logs
+```
+
 ---
 
 ## Method
