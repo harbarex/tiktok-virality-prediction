@@ -40,9 +40,13 @@ pip install einops pytorch pytorch_lightning numpy matplotlib sk-video moviepy
 
 ### Quick Start
 
+### Data Pre-Processing
+```
+```
 
 ---
-#### Model Training & Testing
+
+### Model Training & Testing
 ```
 cd ViViT/
 ```
