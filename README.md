@@ -2,11 +2,17 @@
 
 This project has been implemented by Group 31 as a requirement for the Final Project for the Fall 2021 iteration of the CIS-519 course at the University of Pennsylvania.
 
+## Dataset
+
+The original TikTok dataset with the top 1000 trending videos can be found [here](https://www.kaggle.com/erikvdven/tiktok-trending-december-2020).
+
 dataset with frame-level feature can be found here https://drive.google.com/drive/folders/1RtwHnztpWYrO32sXMNDFJita8k5Fy545
 
 Video Feature Vector Size for each frame in ViViT: (video_size/patch_size)^2
 
 or Embedding is: (batchSize, numFrames, (video_size/patch_size)^2, 192)
+
+---
 
 ## Installation
 
@@ -85,3 +91,4 @@ You can download the pre-trained models [here](https://drive.google.com/drive/fo
 ## Acknowledgement:
 * Base ViViT code is ported to PyTorch Lightning from [@rishikksh20](https://github.com/rishikksh20) repo : [ViViT-pytorch](https://github.com/rishikksh20/ViViT-pytorch)
 * Audio feature extraction taken from Google MediaPipe
+* Erik van de Ven for scraping the videos for the TikTok dataset
