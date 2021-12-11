@@ -44,7 +44,7 @@ pip install einops pytorch pytorch_lightning numpy matplotlib sk-video moviepy
 ---
 #### Model Training & Testing
 ```
-cd ViViT
+cd ViViT/
 ```
 To train the model: 
 
@@ -58,16 +58,7 @@ To test the model:
 python test.py
 ```
 
-
-### Pre-trained Models
-
-You can download the pre-trained models [here](https://drive.google.com/drive/folders/1jIr8dkvefrQmv737fFm2isiT6tqpbTbv).
-```
-├── root 
-│   ├── dir0
-│   ├── dir1
-│   ├── dir2
-```
+---
 
 ## Method
 
