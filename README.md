@@ -6,7 +6,7 @@ This project has been implemented by Group 31 as a requirement for the Final Pro
 
 The original TikTok dataset with the top 1000 trending videos can be found [here](https://www.kaggle.com/erikvdven/tiktok-trending-december-2020).
 
-dataset with frame-level feature can be found here https://drive.google.com/drive/folders/1RtwHnztpWYrO32sXMNDFJita8k5Fy545
+The dataset with frame-level features can be found [here](https://drive.google.com/drive/folders/1RtwHnztpWYrO32sXMNDFJita8k5Fy545).
 
 Video Feature Vector Size for each frame in ViViT: (video_size/patch_size)^2
 
