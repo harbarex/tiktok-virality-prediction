@@ -62,7 +62,7 @@ To test the model:
 python test.py
 ```
 
-## 3. Training Log Visualization:
+### 3. Training Log Visualization:
 ```
 tensorboard --logdir lightning_logs
 ```
