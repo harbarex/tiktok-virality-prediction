@@ -38,7 +38,9 @@ pip install einops pytorch pytorch_lightning numpy matplotlib sk-video moviepy
 
 ### 1. Data Pre-Processing
 
-Optimal selection of features is subject to change.
+```
+run CIS_519_Team_Project_Preprocessing.ipynb
+```
 
 ---
 
