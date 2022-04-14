@@ -15,7 +15,7 @@ The dataset with frame-level features can be found [here](https://drive.google.c
 ```
 git clone https://github.com/MeteoRex11/tiktok-virality-prediction
 cd tiktok-virality-prediction
-pip install einops pytorch pytorch_lightning numpy matplotlib sk-video moviepy
+pip install einops torch pytorch_lightning numpy matplotlib sk-video moviepy
 ```
 
 <details>
