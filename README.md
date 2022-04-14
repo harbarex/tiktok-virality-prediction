@@ -37,8 +37,8 @@ pip install einops pytorch pytorch_lightning numpy matplotlib sk-video moviepy
 ### Quick Start
 
 ### 1. Data Pre-Processing
-```
-```
+
+Optimal selection of features is subject to change.
 
 ---
 
