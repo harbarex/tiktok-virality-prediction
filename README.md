@@ -13,26 +13,83 @@ The dataset with frame-level features can be found [here](https://drive.google.c
 ## Installation
 
 ```
-pip install -r requirements.txt
+git clone https://github.com/MeteoRex11/tiktok-virality-prediction
+cd tiktok-virality-prediction
+pip install einops torch pytorch_lightning numpy matplotlib sk-video moviepy
 ```
 
 <details>
   <summary> Dependencies (click to expand) </summary>
   
   ## Dependencies
-  - pyroaring
-  - sys
-  - random
+  - pytorch
+  - pytorch_lightning
+  - einops
   - matplotlib
   - numpy
-  - imageio
+  - scikit-video
+  - moviepy
   
 </details>
 
+## How To Run?
 
 ### Quick Start
 
+### 1. Data Pre-Processing
 
+```
+run CIS_519_Team_Project_Preprocessing.ipynb
+```
+
+---
+
+### 2. Model Training & Testing
+```
+cd ViViT/
+```
+To train the model: 
+
+```
+python train.py
+```
+
+To test the model: 
+
+```
+python test.py
+```
+
+### 3. Training Log Visualization:
+```
+tensorboard --logdir lightning_logs
+```
+
+---
+
+## Basic Usage:
+```python
+img = torch.ones([1, 134, 3, 240, 240])
+
+image_size = 240
+patch_size = 16
+num_classes = 2
+num_frames = 134
+num_epochs = 30
+dim = 128
+
+model = ViViT(image_size, patch_size, num_classes, num_frames, dim)
+model = model.to(device)
+
+parameters = filter(lambda p: p.requires_grad, model.parameters())
+parameters = sum([np.prod(p.size()) for p in parameters]) / 1_000_000
+print('Trainable Parameters: %.3fM' % parameters)
+
+output = model(img)
+
+print("Shape of model output :", output.shape)      # [B, num_classes]
+```
+---
 
 ## Method
 
